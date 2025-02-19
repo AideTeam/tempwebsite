@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIDETeam - Innowacyjne Studio AI</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-brand">
+                <h1>AIDE<span>Team</span></h1>
+            </div>
+            <div class="navbar-menu">
+                <a href="#home">Strona Główna</a>
+                <a href="#about">O nas</a>
+                <a href="#team">Zespół</a>
+                <a href="#projects">Projekty</a>
+                <a href="#contact">Kontakt</a>
+                <button class="flagship-button">
+                    AIDE Assistant
+                    <span class="button-glow"></span>
+                </button>
+            </div>
+            <button class="menu-toggle" aria-label="Menu nawigacyjne" title="Otwórz/zamknij menu">
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="cyber-grid"></div>
+            <div class="glow-effect"></div>
+            <div class="particles-container"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-text-container">
+                <h1 class="glitch-text" data-text="Innowacyjne Rozwiązania AI">
+                    Innowacyjne Rozwiązania AI
+                </h1>
+                <p>Tworzymy przyszłość z wykorzystaniem sztucznej inteligencji</p>
+                <button class="cta-button" onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">
+                    Zobacz Więcej
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+
+            <div class="hero-decoration">
+                <div class="tech-circle"></div>
+                <div class="floating-elements">
+                    <div class="floating-element" style="--delay: 0s">AI</div>
+                    <div class="floating-element" style="--delay: 0.5s">ML</div>
+                    <div class="floating-element" style="--delay: 1s">Neural</div>
+                    <div class="floating-element" style="--delay: 1.5s">Data</div>
+                    <div class="floating-element" style="--delay: 2s">Cloud</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div ref="particlesRef" class="about-particles"></div>
+        
+        <div class="about-container">
+            <div class="about-header">
+                <h2 class="about-title">O Nas</h2>
+                <div class="accent-line"></div>
+                <p class="about-subtitle">Tworzymy przyszłość z wykorzystaniem sztucznej inteligencji</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-card main-card">
+                    <div class="card-content">
+                        <p class="about-description">Jesteśmy zespołem pasjonatów AI, którzy łączą zaawansowaną technologię z praktycznymi rozwiązaniami. Nasza misja to democratyzacja sztucznej inteligencji i tworzenie innowacyjnych rozwiązań dostępnych dla wszystkich.</p>
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <span class="stat-value">100+</span>
+                                <span class="stat-label">Zrealizowanych Projektów</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value">50+</span>
+                                <span class="stat-label">Zadowolonych Klientów</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value">24/7</span>
+                                <span class="stat-label">Wsparcie Techniczne</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-decoration">
+                        <div class="glow-effect"></div>
+                        <div class="circuit-pattern"></div>
+                    </div>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="card-content">
+                            <div class="feature-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h3>Zaawansowane AI</h3>
+                            <p>Wykorzystujemy najnowsze osiągnięcia w dziedzinie sztucznej inteligencji i uczenia maszynowego</p>
+                        </div>
+                        <div class="card-decoration">
+                            <div class="glow-effect"></div>
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="card-content">
+                            <div class="feature-icon">
+                                <i class="fas fa-tools"></i>
+                            </div>
+                            <h3>Nowoczesne Narzędzia</h3>
+                            <p>Pracujemy z najnowszymi technologiami i narzędziami, aby zapewnić najwyższą jakość rozwiązań</p>
+                        </div>
+                        <div class="card-decoration">
+                            <div class="glow-effect"></div>
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="card-content">
+                            <div class="feature-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3>Społeczność</h3>
+                            <p>Budujemy aktywną społeczność pasjonatów AI i wspieramy wzajemny rozwój</p>
+                        </div>
+                        <div class="card-decoration">
+                            <div class="glow-effect"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="projects-container">
+            <div class="projects-header">
+                <h2 class="glitch-text" data-text="Nasze Projekty">Nasze Projekty</h2>
+                <div class="accent-line"></div>
+                <p class="projects-subtitle">Odkryj nasze innowacyjne rozwiązania AI</p>
+            </div>
+
+            <!-- Flagship Project (AIDE Assistant) -->
+            <div class="project-card main-card">
+                <div class="project-content">
+                    <div class="project-header">
+                        <h3>AIDE Assistant</h3>
+                        <div class="project-badge">Flagship Project</div>
+                    </div>
+                    
+                    <p class="project-description">
+                        Zaawansowany asystent AI nowej generacji, wykorzystujący najnowsze modele językowe i algorytmy uczenia maszynowego. Zapewnia inteligentne wsparcie w programowaniu, analizie danych i automatyzacji zadań. Asystent rozumie kontekst, uczy się z interakcji i dostosowuje odpowiedzi do potrzeb użytkownika.
+                    </p>
+                    
+                    <div class="project-features">
+                        <div class="feature">
+                            <i class="fas fa-brain"></i>
+                            <span>Adaptacyjne AI</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-language"></i>
+                            <span>Wielojęzyczne NLP</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-bolt"></i>
+                            <span>Real-time Processing</span>
+                        </div>
+                    </div>
+
+                    <div class="project-stats">
+                        <div class="stat-item">
+                            <span class="stat-value">99.9%</span>
+                            <span class="stat-label">Precyzja Odpowiedzi</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">32+</span>
+                            <span class="stat-label">Obsługiwane Języki</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">&lt;100ms</span>
+                            <span class="stat-label">Średni Czas Reakcji</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Discord Widget -->
+    <section class="discord-section" id="community">
+        <div class="discord-particles"></div>
+        
+        <div class="discord-container">
+            <div class="discord-content">
+                <div class="discord-info">
+                    <h2>Dołącz do Naszej Społeczności</h2>
+                    <div class="accent-line"></div>
+                    <p class="discord-description">
+                        Stań się częścią rosnącej społeczności pasjonatów AI. Dyskutuj, ucz się i rozwijaj się razem z nami!
+                    </p>
+
+                    <div class="discord-features">
+                        <div class="feature-card">
+                            <div class="card-content">
+                                <div class="feature-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <h3>Aktywna Społeczność</h3>
+                                <p>Dołącz do grupy entuzjastów AI i ML</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-card">
+                            <div class="card-content">
+                                <div class="feature-icon">
+                                    <i class="fas fa-comments"></i>
+                                </div>
+                                <h3>Wsparcie 24/7</h3>
+                                <p>Zawsze znajdziesz kogoś chętnego do pomocy</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-card">
+                            <div class="card-content">
+                                <div class="feature-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <h3>Nauka i Rozwój</h3>
+                                <p>Materiały edukacyjne i wsparcie mentorów</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-card">
+                            <div class="card-content">
+                                <div class="feature-icon">
+                                    <i class="fas fa-project-diagram"></i>
+                                </div>
+                                <h3>Wspólne Projekty</h3>
+                                <p>Współpracuj przy ciekawych projektach AI</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="discord-cta">
+                        <a href="https://discord.gg/aide-project" target="_blank" rel="noopener noreferrer" class="discord-button">
+                            <i class="fab fa-discord"></i>
+                            Dołącz Teraz
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="discord-widget-container">
+                    <div class="widget-card">
+                        <iframe 
+                            src="https://discord.com/widget?id=1332749889528004669&theme=dark" 
+                            width="350" 
+                            height="500" 
+                            allowtransparency="true" 
+                            frameborder="0" 
+                            sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+                            title="Discord Widget"
+                        ></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="faq-container">
+            <div class="faq-header">
+                <h2>Często Zadawane Pytania</h2>
+                <div class="accent-line"></div>
+                <p class="faq-subtitle">Znajdź odpowiedzi na najczęściej zadawane pytania</p>
+            </div>
+
+            <div class="faq-grid">
+                <!-- FAQ Item 1 -->
+                <div class="faq-card">
+                    <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                        <h3>Czym zajmuje się AIDETeam?</h3>
+                        <div class="faq-icon">
+                            <i class="fas fa-plus"></i>
+                            <i class="fas fa-minus"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>AIDETeam to innowacyjne studio AI specjalizujące się w tworzeniu zaawansowanych rozwiązań wykorzystujących sztuczną inteligencję. Naszym głównym celem jest democratyzacja AI i tworzenie narzędzi dostępnych dla wszystkich.</p>
+                    </div>
+                    <div class="card-decoration">
+                        <div class="corner top-left"></div>
+                        <div class="corner top-right"></div>
+                        <div class="corner bottom-left"></div>
+                        <div class="corner bottom-right"></div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-card">
+                    <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                        <h3>Jak mogę dołączyć do społeczności?</h3>
+                        <div class="faq-icon">
+                            <i class="fas fa-plus"></i>
+                            <i class="fas fa-minus"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Możesz dołączyć do naszej społeczności poprzez Discord. Wystarczy kliknąć przycisk "Dołącz Teraz" w sekcji społeczności. Znajdziesz tam aktywną grupę pasjonatów AI i doświadczonych programistów.</p>
+                    </div>
+                    <div class="card-decoration">
+                        <div class="corner top-left"></div>
+                        <div class="corner top-right"></div>
+                        <div class="corner bottom-left"></div>
+                        <div class="corner bottom-right"></div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-card">
+                    <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                        <h3>Jakie technologie wykorzystujecie?</h3>
+                        <div class="faq-icon">
+                            <i class="fas fa-plus"></i>
+                            <i class="fas fa-minus"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Wykorzystujemy najnowsze technologie AI/ML, w tym: TensorFlow, PyTorch, JAX, oraz własne rozwiązania. Nasze projekty są oparte na solidnych podstawach naukowych i najlepszych praktykach branżowych.</p>
+                    </div>
+                    <div class="card-decoration">
+                        <div class="corner top-left"></div>
+                        <div class="corner top-right"></div>
+                        <div class="corner bottom-left"></div>
+                        <div class="corner bottom-right"></div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-card">
+                    <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                        <h3>Jak mogę rozpocząć współpracę?</h3>
+                        <div class="faq-icon">
+                            <i class="fas fa-plus"></i>
+                            <i class="fas fa-minus"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Aby rozpocząć współpracę, skontaktuj się z nami przez Discord lub email. Omówimy Twoje potrzeby i zaproponujemy najlepsze rozwiązanie dopasowane do Twoich wymagań.</p>
+                    </div>
+                    <div class="card-decoration">
+                        <div class="corner top-left"></div>
+                        <div class="corner top-right"></div>
+                        <div class="corner bottom-left"></div>
+                        <div class="corner bottom-right"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-brand">
+                    <h2>AIDE<span>Team</span></h2>
+                    <p>Innowacyjne rozwiązania AI dla Twojej firmy</p>
+                </div>
+                <div class="footer-socials">
+                    <a href="https://github.com/aide-project" target="_blank" rel="noopener noreferrer" class="social-link github">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/company/aide-project" target="_blank" rel="noopener noreferrer" class="social-link linkedin">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://discord.gg/aide-project" target="_blank" rel="noopener noreferrer" class="social-link discord">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Nawigacja</h3>
+                <ul class="footer-links">
+                    <li><a href="#home">Strona Główna</a></li>
+                    <li><a href="#about">O Nas</a></li>
+                    <li><a href="#team">Zespół</a></li>
+                    <li><a href="#projects">Projekty</a></li>
+                    <li><a href="#community">Społeczność</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Projekty</h3>
+                <ul class="footer-links">
+                    <li><a href="#projects">AIDE Assistant</a></li>
+                    <li><a href="#projects">AI Code Assistant</a></li>
+                    <li><a href="#projects">AI Research Tools</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Kontakt</h3>
+                <ul class="footer-contact">
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:contact@aideteam.com">contact@aideteam.com</a>
+                    </li>
+                    <li>
+                        <i class="fab fa-discord"></i>
+                        <a href="https://discord.gg/aide-project" target="_blank" rel="noopener noreferrer">Discord</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 AIDETeam. Wszelkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
